@@ -1,0 +1,445 @@
+/*------------------------------
+    Fonts
+------------------------------*/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/*------------------------------
+    Common or Utility Style
+------------------------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    }
+
+main{
+    width: 1024px;
+    margin: 30px auto;
+    }
+
+.items{
+    margin-top: 80px;
+    }
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 70%;
+    }
+
+/*------------------------------
+    Top Bannar Style
+------------------------------*/
+.top-bannar{
+    display: flex;
+    background-color: #171717;
+    color: white;
+    padding:0rem;
+    border-radius: 30px;
+    align-items: center;
+    }
+
+h1{
+    font-size: 3.5vw;
+    }
+
+.half-width{
+    width: 50%;
+    padding-left: 25px;
+    margin-bottom: 0%;
+    position: relative;
+    }
+
+#top-bannar{
+    width: 50%;
+    padding-left: 80px;
+    }
+
+#img-bannar{
+    width: 95%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    vertical-align: bottom;
+    }
+
+.option{
+    width: 200px;
+    background-color: #171717;
+    padding: 20px 20px;
+    border-radius: 10px;
+    }
+
+/*------------------------------
+    All Button Style
+------------------------------*/
+.btn{
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    }
+
+.btn:hover{
+    background-color: orange;
+    cursor:pointer;
+    color: #171717;
+    padding: 20px 35px;
+    transition: 2s;
+
+
+    }
+
+/* selected button style */
+.btn-select{
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+.btn-select:hover{
+    background-color: orange;
+    text-decoration: none;
+    cursor:pointer;
+    color: #171717;
+    }
+
+/* deselected button style */
+.btn-deselect{
+    background-color: white;
+    color: orangered;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+.btn-deselect:hover{
+    background-color: orangered;
+    text-decoration: none;
+    cursor:pointer;
+    color: white;
+    }
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: start;
+    gap:25px;
+    }
+
+
+/*------------------------------
+    Upcomming Match
+------------------------------*/
+.up-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    }   
+
+.match{
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    border-radius: 10px;
+    padding: 35px 20px;
+    align-items: center;
+    }
+
+.match-team{
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+    }
+
+.match-team img{
+    width: 5.1vw;
+    }
+
+.center{
+    text-align: center;
+    }
+
+
+/*------------------------------
+    Blogs
+------------------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    }
+
+.blog{
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    border-radius: 10px;
+    }
+
+.blog img{
+    width: 100%;
+    }
+
+.blog-detail{
+    padding: 10px 20px;
+    }
+
+.blog-info{
+    margin-right: 25px;
+    }
+
+.category{
+    padding: 5px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    }
+
+.btn-hide{
+    display: none;
+    }
+
+footer{
+    background-color: #171717;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    }
+
+#footer-logo{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+.footer-nav{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    }
+
+.social{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    }
+
+.social-ico{
+    color: white;
+    font-size: 3vw;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+.social-ico:hover{
+    color: gray;
+}
+
+
+/*------------------------------
+    Medium Device (Tablet)
+------------------------------*/
+@media only screen and (max-width: 992px){
+    main{
+    width: 90%;
+    }
+
+.half-width{
+        width: 60%;
+        padding-left: 25px;
+        margin-bottom: 0%;
+        position: relative;
+        }   
+
+    #top-bannar{
+        width: 40%;
+        padding-left: 50px;
+        }        
+
+.mini{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+.option{
+    display: inline;
+    width: 100%;
+    background-color: white;
+    }
+        
+/* selected button style */
+.btn-select{
+    border: 1px solid grey;
+    width: 30%;
+    }
+
+/* deselected button style */
+.btn-deselect{
+    border: 1px solid grey;
+    width: 30%;
+    margin-right: 15px;
+    }
+
+.items{
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+    }
+
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+.up-match{
+        grid-template-columns: repeat(2, 1fr);
+       }    
+    
+.match-team img{
+        width: 100%;
+        }    
+
+.hide-blog{
+    display: none;}
+        
+.btn-all-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.btn-hide{
+    display: flex;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    }
+            
+.btn-hide:hover{
+    background-color: orange;
+    cursor:pointer;
+    color: #171717;
+    }
+}
+
+
+/*------------------------------
+    Small Device (Mobile)
+------------------------------*/
+@media only screen and (max-width: 688px){
+
+main{
+    width: 90%;
+    }
+
+.top-bannar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 30px;
+    }
+
+.mini{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    
+.half-width{
+    width: 80%;
+    margin-bottom: 0%;
+    position: relative;
+    }
+        
+h1{
+    font-size: 30px;
+    }
+        
+    #top-bannar{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+        
+    #img-bannar{
+        width: 95%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        vertical-align: bottom;
+        align-items: center;
+        }
+        
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 90%;
+    padding: 5px 15px;    
+    }
+        
+/* selected button style */
+.btn-select{
+    border: 1px solid grey;
+    width: auto;
+    }
+
+/* deselected button style */
+.btn-deselect{
+    border: 1px solid grey;
+    width: auto;
+    }
+
+.items{
+    display: grid;
+    }
+
+.blogs{
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+.up-match{
+    grid-template-columns: repeat(1, 1fr);
+   }    
+
+.match-team img{
+    width: 100%;
+    }   
+
+.btn-hide{
+    display: none;
+}
+
+.footer-nav{
+    display: block;
+    padding-top: 30px;}
+}
+
+
+
+   
